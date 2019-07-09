@@ -31,7 +31,7 @@ int main(){
     }
     printf("Merged Array:\n");
     for(i=0;i<s;i++)
-        printf("%d ",c[i]);
+        printf("%d  ",c[i]);
     printf("\n");
     return 0;
 }
