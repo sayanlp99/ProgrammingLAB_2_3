@@ -20,8 +20,8 @@ int main(){
     s=m+n;
     for(i=0,j=n;i<n,j<s;i++,j++)
         c[j]=b[i];
-    for(i=0;i<n-1;i++){
-        for(j=i+1;j<n;j++){
+    for(i=0;i<s-1;i++){
+        for(j=i+1;j<s;j++){
             if(c[i]>c[j]){
                 t=c[j];
                 c[j]=c[i];
