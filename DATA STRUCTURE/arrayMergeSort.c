@@ -15,5 +15,35 @@ int main(){
         printf("[%d]:",j+1);
         scanf("%d",&b[j]);
     }
+    while(i<m && j<n){
+        if(a[i]<b[j]){
+            c[k]=a[i];
+            i++;
+            k++;
+        }
+        else{
+            c[k]=b[j];
+            j++;
+            k++;
+        }
+    }
+    if(j>=m){
+        while(i<m){
+            c[k]=a[i];
+            k++;
+            i++;
+        }
+    }
+    else{
+        while(j<n){
+            c[k]=b[j];
+            k++;
+            j++;
+        }
+    }
+    printf("Array after merging:\n");
+    for(i=0;i<n+m;i++)
+        printf("%d ",c[i]);
+    printf("\n");
     return 0;
 }
