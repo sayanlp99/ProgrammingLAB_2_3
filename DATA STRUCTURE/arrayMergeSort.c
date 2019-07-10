@@ -19,7 +19,7 @@ int main(){
     j=0;
     k=0;
     while(i<m && j<n){
-        if(a[i]<b[j]){
+        if(a[i]<=b[j]){
             c[k]=a[i];
             i++;
             k++;
