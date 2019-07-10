@@ -46,7 +46,7 @@ int main(){
     }
     printf("Array after merging:\n");
     for(i=0;i<n+m;i++)
-        printf("%d ",c[i]);
+        printf("%d  ",c[i]);
     printf("\n");
     return 0;
 }
