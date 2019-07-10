@@ -31,7 +31,7 @@ int main(){
         }
     }
     if(j>=m){
-        while(i<=m){
+        while(i<m){
             c[k]=a[i];
             k++;
             i++;
