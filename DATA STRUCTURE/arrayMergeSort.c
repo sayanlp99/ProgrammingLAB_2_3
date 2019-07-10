@@ -15,6 +15,7 @@ int main(){
         printf("[%d]:",j+1);
         scanf("%d",&b[j]);
     }
+    k=0;
     while(i<m && j<n){
         if(a[i]<b[j]){
             c[k]=a[i];
