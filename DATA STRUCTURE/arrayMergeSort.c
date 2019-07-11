@@ -22,13 +22,12 @@ int main(){
         if(a[i]<=b[j]){
             c[k]=a[i];
             i++;
-            k++;
         }
         else{
             c[k]=b[j];
             j++;
-            k++;
         }
+        k++;
     }
     if(j>=m){
         while(i<m){
