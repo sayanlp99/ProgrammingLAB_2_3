@@ -14,14 +14,6 @@ switch c
         fprintf('Grade: C\n');
     case 5
         fprintf('Grade: D\n');
-    case 4
-        fprintf('Grade: F\n');
-    case 3
-        fprintf('Grade: F\n');
-    case 2
-        fprintf('Grade: F\n');
-    case 1
-        fprintf('Grade: F\n');
-    case 0
+    otherwise
         fprintf('Grade: F\n');
 end
