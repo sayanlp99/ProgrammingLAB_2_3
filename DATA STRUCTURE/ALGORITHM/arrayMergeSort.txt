@@ -1,10 +1,35 @@
 1. Begin
-2.Create a[20]
-3.Read n, pos
+2.Create a[50],b[50],c[100]
+3.Read n
 4.Set i=0
 5.Repeat for i=0 to n
-    Read elements a[i]
-6.
-7.
-8.
-9.
+    5a.Read elements a[i]
+6.Read m
+7.Set j=0
+8.Repeat for j=0 to m
+    8a.Read elements b[j]
+9. Set i=0,j=0,k=0
+10. while i<m and j<n
+        10a.Check if a[i]<b[j]
+            i)set c[k]=a[i]
+            ii)set i=i+1
+        10b.else
+            i)set c[k]=b[j]
+            ii)set j=j+1
+        10c.set k=k+1
+    end while
+11a.if j>=m
+    i)while i>m
+        c[k]=a[i];
+        k++;
+        i++;
+    end while
+11b.else
+    i)while j<n
+        c[k]=b[j];
+        k++;
+        j++;
+    end while
+12.n=n+m
+13.Display the new merged array
+14.end
