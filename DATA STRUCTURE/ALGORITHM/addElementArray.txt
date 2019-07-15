@@ -1,13 +1,14 @@
 1. Begin
-2. Create a[20]
+2. Create a[50]
 3. Read n,item,pos
 4. Set i=0
 5. Repeat for i=0 to n
-    5a. Read elements; ie, a[i]
-6. Set pos=pos-1
-7. Repeat for i=n-1 down to pos
-    7a. Set a[i+1]=a[i]
-8. Set a[pos]=item
-9. Set n=n+1
-10. Display the new list of array
-11. End
+    5a. Read elements a[i]
+6. Read item,pos
+7. Set pos=pos-1
+8. Repeat for i=n-1 down to pos
+    8a. Set a[i+1]=a[i]
+9. Set a[pos]=item
+10. Set n=n+1
+11. Display the new list of array
+12. End
