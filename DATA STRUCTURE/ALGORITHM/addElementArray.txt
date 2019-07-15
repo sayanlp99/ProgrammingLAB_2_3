@@ -10,5 +10,5 @@
     8a. Set a[i+1]=a[i]
 9. Set a[pos]=item
 10. Set n=n+1
-11. Display the new list of array
+11. Display the new list of the array
 12. End
