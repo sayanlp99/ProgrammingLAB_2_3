@@ -3,7 +3,7 @@ b=a-rem(a,10);
 c=b/10;
 switch c
     case 10
-        fprintf('Grade: 0\n')
+        fprintf('Grade: O\n');
     case 9
         fprintf('Grade: O\n');
     case 8
