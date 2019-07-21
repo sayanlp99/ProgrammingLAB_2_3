@@ -3,7 +3,7 @@ int a[50];
 void binary_search(int[] ,int, int, int);
 int main(){
 	int m,n,i,e;
-	printf("Enter the range of the array:");
+	printf("Enter range of the array:");
 	scanf("%d",&n);
 	printf("Enter array elements:\n");
 	for(i=0;i<n;i++){
