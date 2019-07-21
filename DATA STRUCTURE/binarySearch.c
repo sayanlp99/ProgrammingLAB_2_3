@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
 	int a[50],m,n,i,e,u,l;
-	printf("Enter the range of the array:");
+	printf("Enter range of the array:");
 	scanf("%d",&n);
 	printf("Enter array elements:\n");
 	for(i=0;i<n;i++){
@@ -15,7 +15,7 @@ int main(){
 	while(l<=u){
 		m=(l+u)/2;
 		if(a[m]==e){
-			printf("Element is found at position:%d\n",m+1);
+			printf("Element found at position:%d\n",m+1);
 			break;
 		}
 		else if(e<a[m])
