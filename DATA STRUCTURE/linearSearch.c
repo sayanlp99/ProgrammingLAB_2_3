@@ -13,7 +13,7 @@ int main(){
 	for(i=0;i<n;i++){
 		if(a[i]==e){
 			c++;
-			printf("Element is found at position:%d\n",i+1);
+			printf("Element found at position:%d\n",i+1);
 		}
 	}
 	if(c==0)
