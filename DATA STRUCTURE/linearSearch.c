@@ -12,9 +12,8 @@ int main(){
 	scanf("%d",&e);
 	for(i=0;i<n;i++){
 		if(a[i]==e){
-			c=1;
+			c++;
 			printf("Element is found at position:%d\n",i+1);
-			break;
 		}
 	}
 	if(c==0)
