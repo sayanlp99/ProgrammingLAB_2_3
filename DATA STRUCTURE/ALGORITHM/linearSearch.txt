@@ -1,0 +1,14 @@
+1. Begin
+2. Create a[50]
+3. Read n,item
+4. i=0 and c=0
+5. Repeat for i=0 to n
+  5a. Read element a[i]
+6. Read item
+7. Repeat fot i=0 to n
+  7a. If a[i]==e
+    • c=c+1
+    • Print element found at position i+1
+8. If c==0
+  8a. Print element not found
+9.End
