@@ -5,7 +5,7 @@
 5. Repeat for i=0 to n
   5a. Read element a[i]
 6. Read item to be searched
-7. Repeat fot i=0 to n
+7. Repeat for i=0 to n
   7a. If a[i]==e
     • c=c+1
     • Print element found at position i+1
