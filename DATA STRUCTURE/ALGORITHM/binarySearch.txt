@@ -14,7 +14,7 @@
     • break
   9c. else if item<a[mid]
     • high=mid+1
-  9e.else
+  9d.else
     • low=mid+1
  end while
 10.if low>high
