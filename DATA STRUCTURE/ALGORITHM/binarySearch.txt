@@ -20,4 +20,3 @@
 10.if low>high
   10a. Print element not found
 11. End
- 
