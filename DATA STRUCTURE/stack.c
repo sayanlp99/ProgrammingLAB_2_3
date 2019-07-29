@@ -25,13 +25,14 @@ int main(){
 	return 0;
 }
 void push(){
+	int item;
 	if(top==MAX-1)
 		printf("Stack is full\n");
 	else{
 		printf("Enter the Item:");
 		scanf("%d",&item);
 		top=top+1;
-		stack[top]=e;		
+		stack[top]=item;		
 	}
 }
 void pop(){
