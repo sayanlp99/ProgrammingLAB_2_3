@@ -1,0 +1,47 @@
+1. Begin
+2. Create global variable MAX=5, stack[MAX] and top=-1
+3. Declare functions pop(), push() and display()
+4. In main() function:
+    4a. Declare variables select and item.
+    4b. while(1)
+        •Print the Menu with options
+        •Read the option from the user
+        •Switch(option)
+            case 1:
+                Call push() function
+                break
+            case 2:
+                Call pop() function
+                break
+            case 3:
+                Call display() function
+                break
+        end of Switch
+    end of while
+End of main() function
+5. In push() function
+    5a. If top==MAX-1
+        •Print that the stack is full
+    5b.Else
+        •Read item from user to push into stack
+        •top=top+1
+        •stack[top]=item
+End of push() function
+6. In pop() function
+    6a. If top==*1
+        •Print that the Stack is empty.
+    6b. Else
+        •Print that stack[top] is the deleted item
+        •top=top-1
+End of pop() function
+7. In display() function
+    7a. Declare int i
+    7b.If top==-1
+        •Print that the stack is empty.
+    7c.Else
+        •Print the Stack is:
+        •For i=top down to 0
+            Print Element stack[i]
+        •End of For loop
+End of display() function
+8.End
