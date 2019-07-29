@@ -1,9 +1,9 @@
 #include<stdio.h>
-#define MAX 50
+#define MAX 10
 int stack[MAX];
 int top=-1;
 void pop();
-void push(int);
+void push();
 void display();
 int main(){
 	int select,item;
@@ -12,9 +12,7 @@ int main(){
 		scanf("%d",&select);
 		switch(select){
 			case 1:
-					printf("Enter the Item:");
-					scanf("%d",&item);
-					push(item);
+					push();
 					break;
 			case 2:
 					pop();
@@ -26,10 +24,12 @@ int main(){
 	}
 	return 0;
 }
-void push(int e){
+void push(){
 	if(top==MAX-1)
 		printf("Stack is full\n");
 	else{
+		printf("Enter the Item:");
+		scanf("%d",&item);
 		top=top+1;
 		stack[top]=e;		
 	}
