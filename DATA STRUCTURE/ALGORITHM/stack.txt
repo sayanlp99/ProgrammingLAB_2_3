@@ -42,6 +42,6 @@ End of pop() function
         •Print the Stack is:
         •For i=top down to 0
             Print Element stack[i]
-        •End of For loop
+        End of For loop
 End of display() function
 8.End
