@@ -41,9 +41,8 @@ void pop(){
 		printf("Stack is Empty\n");
 	}
 	else{
-		t= stack[top];
-		top=top-1;	
-		printf("Deleted Item is:%d\n",t);
+		printf("Deleted Item is:%d\n",stack[top]);
+		top=top-1;
 	}
 }
 void display(){
