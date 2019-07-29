@@ -12,14 +12,14 @@ int main(){
 		scanf("%d",&select);
 		switch(select){
 			case 1:
-					push();
-					break;
+				push();
+				break;
 			case 2:
-					pop();
-					break;
+				pop();
+				break;
 			case 3:
-					display();
-					break;
+				display();
+				break;
 		}
 	}
 	return 0;
@@ -36,7 +36,6 @@ void push(){
 	}
 }
 void pop(){
-	int t;
 	if(top==-1){
 		printf("Stack is Empty\n");
 	}
