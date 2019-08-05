@@ -16,4 +16,5 @@
 5. In push() function
     5a. stack[++top]=item
 6. In pop() function
-    6. return stack[top--]
+    6a. return stack[top--]
+7. End
