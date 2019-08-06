@@ -5,12 +5,11 @@
     4a. Declare i, x=0, string[10], revString[10]
     4b. Read the string from the user
     4c. while (string[x]!='\0')
-        push(string[x])
-        x=x+1
+      •push(string[x])
+      •x=x+1
     End while
-    4d. for(i=0;i<x;i++)
-        revString[i]=pop()
-    End of for
+    4d. Repeat i=0 to x
+      •revString[i]=pop()
     4e. revString[i]='\0'
     4f. print the reversed string
 5. In push() function
