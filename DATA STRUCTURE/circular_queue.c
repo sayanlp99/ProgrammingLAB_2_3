@@ -27,17 +27,19 @@ int main(){
 	return 0;
 }
 void insert(){
-	if(rear == MAX-1)
+	if((front==0 && rear==MAX-1) || (front==rear+1))
 		printf("Queue Overflow\n");
 	else{
+		if(front==-1)
+			front=rear=0;
+		else{
+			if(rear==MAX-1)
+				rear=0;
+			else
+				rear=rear+1;
+		}
 		printf("Enter item:");
 		scanf("%d", &item);
-		if(front == -1)
-			front = rear = 0;
-		else if(rear = MAX-1)
-			rear = 0;
-		else
-			rear = rear+1;
 		cqueue[rear] = item;
 	}
 }
@@ -48,10 +50,12 @@ void delete(){
 		printf("Deleted item: %d\n", cqueue[front]);
 		if(rear == front)
 			rear = front = -1;
-		else if(front = MAX-1)
-			front = 0;
-		else
-			front = front+1;
+		else{
+			if(front == MAX-1)
+				front = 0;
+			else
+				front = front+1;
+		}
 	}
 }
 void display(){
@@ -60,13 +64,14 @@ void display(){
 		printf("Queue is Empty\n");
 	else{
 		if (rear >= front)
-			for(i = 0; i < front; i++)
+			for(i=front; i<=rear; i++)
 				printf("%d  ", cqueue[i]);
 		else{
-			for(i = 0; i <= rear; i++)
+			for(i=front; i<=MAX-1; i++)
 				printf("%d  ", cqueue[i]);
-			for (int i = 0; i < MAX; i++)
+			for (i=front; i<=rear; i++)
 				printf("%d  ", cqueue[i]);
 		}
+		printf("\n");
 	}
 }
