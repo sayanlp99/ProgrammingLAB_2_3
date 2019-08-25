@@ -69,7 +69,7 @@ void display(){
 		else{
 			for(i=front; i<=MAX-1; i++)
 				printf("%d  ", cqueue[i]);
-			for (i=front; i<=rear; i++)
+			for (i=0; i<=rear; i++)
 				printf("%d  ", cqueue[i]);
 		}
 		printf("\n");
