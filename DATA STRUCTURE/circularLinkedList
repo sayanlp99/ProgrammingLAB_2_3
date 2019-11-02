@@ -50,11 +50,11 @@ void delete(){
 		printf("UNDERFLOW\n");
 	else{
 		if(front==rear){
-			printf("Deleted Node:%d\n",front->info);
+			printf("Deleted Node with value:%d\n",front->info);
 			front=rear=NULL;
 		}
 		else{
-			printf("Deleted Node:%d\n",front->info);
+			printf("Deleted Node with value:%d\n",front->info);
 			front=front->next;
 			rear->next=front;
 		}
@@ -68,7 +68,7 @@ void display(){
 		printf("UNDERFLOW\n");
 	else{
 		for(;temp!=rear;temp=temp->next)
-			printf("Node value:%d  address=%u  next=%u\n",temp->info,temp,temp->next);
-		printf("Node value:%d  address=%u  next=%u\n",temp->info,temp,temp->next);
+			printf("Node value:%d  Node address=%u  Node next=%u\n",temp->info,temp,temp->next);
+		printf("Node value:%d  Node address=%u  Node next=%u\n",temp->info,temp,temp->next);
 	}
 }
