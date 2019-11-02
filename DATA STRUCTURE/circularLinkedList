@@ -10,7 +10,7 @@ void delete();
 void display();
 int main(){
 	int c;
-	printf("\nOPTIONS:-\n1. CREATE\n2. DELETE\n3. DISPLAY\n");
+	printf("OPTIONS:-\n1. CREATE\n2. DELETE\n3. DISPLAY\n");
 	while(1){
 	printf("Enter Option:");
 	scanf("%d",&c);
