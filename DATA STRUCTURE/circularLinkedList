@@ -1,108 +1,74 @@
 #include<stdio.h>
 #include<stdlib.h>
- 
-typedef struct Node
- 
-{
+typedef struct Node{
 	int info;
 	struct Node *next;
 }node;
- 
 node *front=NULL,*rear=NULL,*temp;
- 
 void create();
-void del();
+void delete();
 void display();
- 
-int main()
-{
-	int chc;
-	do
-	{
- 	printf("\nMenu\n\t 1 to create the element : ");
-	printf("\n\t 2 to delete the element : ");
-	printf("\n\t 3 to display the queue : ");
-	printf("\n\t 4 to exit from main : ");
-	printf("\nEnter your choice : ");
+int main(){
+	int c;
+	printf("\nOPTIONS:-\n1. CREATE\n2. DELETE\n3. DISPLAY\n");
+	while(1){
+	printf("Enter Option:");
 	scanf("%d",&chc);
-	
-		switch(chc)
-		{
+		switch(c){
 			case 1:
-	 		create();
-			break;
-	 	
+		 		create();
+				break;
 		 	case 2:
-	 		del();
-	 		break;
-	 
+		 		delete();
+		 		break;
 	 		case 3:
-	 		display();
-	 		break;
-	 
-	 		case 4:
-	 		return 1;
-	 		
+		 		display();
+		 		break;	 		
 			default:
-	 			printf("\nInvalid choice :");
+	 			printf("INVALID OPTION.\n");
 	 	}
-	}while(1);
- 
+	} 
 	return 0;
 }
- 
-void create()
-{
+void create(){
 	node *newnode;
 	newnode=(node*)malloc(sizeof(node));
-	printf("\nEnter the node value : ");
+	printf("Enter the node value :");
 	scanf("%d",&newnode->info);
 	newnode->next=NULL;
 	if(rear==NULL)
 	front=rear=newnode;
-	else
-	{
+	else{
 		rear->next=newnode;
 		rear=newnode;
 	}
-	
 	rear->next=front;
 }
- 
-void del()
-{
+void delete(){
 	temp=front;
 	if(front==NULL)
-		printf("\nUnderflow :");
-	else
-	{
-		if(front==rear)
-		{
-			printf("\n%d",front->info);
+		printf("UNDERFLOW\n");
+	else{
+		if(front==rear){
+			printf("Deleted Node:%d\n",front->info);
 			front=rear=NULL;
 		}
-		else
-		{
-			printf("\n%d",front->info);
+		else{
+			printf("Deleted Node:%d\n",front->info);
 			front=front->next;
 			rear->next=front;
 		}
- 
 	temp->next=NULL;
 	free(temp);
 	}
 }
- 
-void display()
-{
+void display(){
 	temp=front;
 	if(front==NULL)
-		printf("\nEmpty");
-	else
-	{
-		printf("\n");
+		printf("UNDERFLOW\n");
+	else{
 		for(;temp!=rear;temp=temp->next)
-			printf("\n%d address=%u next=%u\t",temp->info,temp,temp->next);
-			printf("\n%d address=%u next=%u\t",temp->info,temp,temp->next);
+			printf("Node value:%d  address=%u  next=%u\n",temp->info,temp,temp->next);
+		printf("Node value:%d  address=%u  next=%u\n",temp->info,temp,temp->next);
 	}
 }
