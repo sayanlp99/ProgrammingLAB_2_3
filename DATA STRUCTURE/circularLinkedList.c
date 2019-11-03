@@ -37,7 +37,7 @@ void create(){
 	scanf("%d",&newnode->info);
 	newnode->next=NULL;
 	if(rear==NULL)
-	front=rear=newnode;
+		front=rear=newnode;
 	else{
 		rear->next=newnode;
 		rear=newnode;
