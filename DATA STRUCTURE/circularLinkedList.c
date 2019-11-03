@@ -12,8 +12,8 @@ int main(){
 	int c;
 	printf("OPTIONS:-\n1. CREATE\n2. DELETE\n3. DISPLAY\n");
 	while(1){
-	printf("Enter Option:");
-	scanf("%d",&c);
+		printf("Enter Option:");
+		scanf("%d",&c);
 		switch(c){
 			case 1:
 		 		create();
