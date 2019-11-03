@@ -58,8 +58,8 @@ void delete(){
 			front=front->next;
 			rear->next=front;
 		}
-	temp->next=NULL;
-	free(temp);
+		temp->next=NULL;
+		free(temp);
 	}
 }
 void display(){
