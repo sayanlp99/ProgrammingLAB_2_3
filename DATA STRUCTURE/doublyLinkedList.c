@@ -8,7 +8,7 @@ struct node{
 void create();
 void insert();
 void delete();
-void count();
+void length();
 void display();
 int count=0;
 int main(){
@@ -28,7 +28,7 @@ int main(){
                 delete();
                 break;
             case 4:
-                count();
+                length();
                 break;
             case 5:
                 display();
