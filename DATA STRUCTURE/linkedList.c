@@ -15,8 +15,9 @@ void del_pos(int);
 void del_end();
 int main() {
   int i, n, ch, flag = 1, pos;
+  printf("\n1.To create\n2.INsert at beginning\n3.Insert at intermediate position\n4.Insert at end\n5.Delete from beginning\n6.Delete from intermediate position\n7.Delete from end\n8.Display\nEnter your choice:");
   while (flag) {
-    printf("\n1.To create\n2.INsert at beginning\n3.Insert at intermediate position\n4.Insert at end\n5.Delete from beginning\n6.Delete from intermediate position\n7.Delete from end\n8.Display\nEnter your choice:");
+    printf("Enter Option:");
     scanf("%d", & ch);
     switch (ch) {
     case 1:
