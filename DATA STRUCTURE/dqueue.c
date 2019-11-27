@@ -9,9 +9,10 @@ void delete_front();
 void display();
 int main(){
 	int select;
+	printf("Enter option:-\n1. INSERT AT FRONT\n2. INSERT AT REAR\n");
+	printf("3. DELETE FROM FRONT\n4. DELETE FROM REAR\n5 DISPLAY\n");
 	while(1){
-		printf("Enter option:-\n1. INSERT AT FRONT\n2. INSERT AT REAR\n");
-		printf("3. DELETE FROM FRONT\n4. DELETE FROM REAR\n5 DISPLAY\n:");
+		printf("Enter Option:");
 		scanf("%d",&select);
 		switch(select){
 			case 1:
