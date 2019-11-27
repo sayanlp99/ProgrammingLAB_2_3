@@ -18,7 +18,7 @@ int main(){
     }
     i=0;
     while((i<=n1-1)&&(j<=n2-1)){
-        if(arr1[i]<arr2[h])
+        if(arr1[i]<arr2[j])
             arr3[k++]=arr1[i++];
         else
             arr3[k++]=arr2[j++];
@@ -28,8 +28,9 @@ int main(){
     while(j<=n2-1)
         arr3[k++]=arr2[j++];
     printf("Merged Array:\n");
-    for(i=0;i<n3;i++){
+    for(i=0;i<n1+n2;i++){
         printf("[%d]:",i+1);
         scanf("%d",&arr3[i]);
     }
+    return 0;
 }
