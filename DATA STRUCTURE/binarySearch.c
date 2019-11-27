@@ -1,29 +1,27 @@
 #include<stdio.h>
-int main(){
-	int a[50],m,n,i,e,u,l;
-	printf("Enter range of the array:");
-	scanf("%d",&n);
-	printf("Enter array elements:\n");
-	for(i=0;i<n;i++){
-		printf("[%d]:",i+1);
-		scanf("%d",&a[i]);
-	}
-	printf("Enter element to be searched:");
-	scanf("%d",&e);
-	l=0;
-	u=n-1;
-	while(l<=u){
-		m=(l+u)/2;
-		if(a[m]==e){
-			printf("Element found at position:%d\n",m+1);
-			break;
-		}
-		else if(e<a[m])
-			u=m-1;
-		else
-			l=m+1;
-	}
-	if(l>u)
-		printf("Element not found.\n");
-	return 0;
+void main(){
+    int i,a[20],n,item,start,end,mid;
+    printf("Enter the length of the array:");
+    scanf("%d",&n);
+    printf("Enter elements in the array:\n");
+    for(i=0;i<n;i++){
+        printf("[%d]:",i+1);
+        scanf("%d",&a[i]);
+    }
+    printf("Enter the item:");
+    scanf("%d",&item);
+    start=0;
+    end=n-1;
+    mid=(start+end)/2;
+    while(item!=a[mid] && start<=end){
+        if(item<a[mid])
+            end=mid-1;
+        else
+            start=mid+1;
+        mid=(start+end)/2;
+    }
+    if(item==a[mid])
+        printf("Search was Successful at %d.\n",mid+1);
+    if(start>end)
+        printf("Search was Unsuccessful.\n");
 }
