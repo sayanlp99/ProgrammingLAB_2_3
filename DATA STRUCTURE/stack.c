@@ -51,7 +51,7 @@ void display(){
 	else{
 		printf("The Stack is:-\n");
 		for(i=top;i>=0;--i)
-			printf("%d\n",stack[i]);
+			printf("%d  ",stack[i]);
 		printf("\n");
 	}
 }
