@@ -1,5 +1,5 @@
 #include <stdio.h>
-void main()
+int main()
 {
     int data[100],i,n,step,temp;
     printf("Enter the number of elements to be sorted:");
@@ -20,5 +20,7 @@ void main()
     }
     printf("In ascending order:\n");
     for(i=0;i<n;++i)
-         printf("%d  ",data[i]);
+        printf("%d  ",data[i]);
+    printf("\n");
+    return 0;
 }
