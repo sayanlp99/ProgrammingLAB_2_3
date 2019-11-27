@@ -23,11 +23,11 @@ int main(){
 		 		break;
 	 		case 3:
 		 		display();
-		 		break;	 		
+		 		break;
 			default:
 	 			printf("INVALID OPTION.\n");
 	 	}
-	} 
+	}
 	return 0;
 }
 void create(){
