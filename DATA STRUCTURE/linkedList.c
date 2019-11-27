@@ -62,15 +62,15 @@ void create() {
   temp = (struct node * ) malloc(sizeof(struct node));
   printf("Enter the item:");
   scanf("%d", & item);
-  temp - > info = item;
-  temp - > next = NULL;
+  temp -> info = item;
+  temp -> next = NULL;
   if (start == NULL)
     start = temp;
   else {
     ptr = start;
-    while (ptr - > next != NULL)
-      ptr = ptr - > next;
-    ptr - > next = temp;
+    while (ptr -> next != NULL)
+      ptr = ptr -> next;
+    ptr -> next = temp;
   }
 }
 void display() {
@@ -80,8 +80,8 @@ void display() {
   else {
     ptr = start;
     while (ptr != NULL) {
-      printf("%3d", ptr - > info);
-      ptr = ptr - > next;
+      printf("%3d", ptr -> info);
+      ptr = ptr -> next;
     }
   }
 }
@@ -90,12 +90,12 @@ void ins_beg() {
   temp = (struct node * ) malloc(sizeof(struct node));
   printf("Enter the item to insert:");
   scanf("%d", & item);
-  temp - > info = item;
-  temp - > next = NULL;
+  temp -> info = item;
+  temp -> next = NULL;
   if (start == NULL)
     start = temp;
   else {
-    temp - > next = start;
+    temp -> next = start;
     start = temp;
   }
 }
@@ -105,16 +105,16 @@ void ins_pos(int pos) {
   temp = (struct node * ) malloc(sizeof(struct node));
   printf("Enter the item to insert at %d position:", pos);
   scanf("%d", & item);
-  temp - > info = item;
-  temp - > next = NULL;
+  temp -> info = item;
+  temp -> next = NULL;
   if (start == NULL)
     start = temp;
   else {
     ptr = start;
     for (i = 1; i < pos - 1; i++)
-      ptr = ptr - > next;
-    temp - > next = ptr - > next;
-    ptr - > next = temp;
+      ptr = ptr -> next;
+    temp -> next = ptr -> next;
+    ptr -> next = temp;
   }
 }
 void ins_end() {
@@ -122,15 +122,15 @@ void ins_end() {
   temp = (struct node * ) malloc(sizeof(struct node));
   printf("Enterr the element:");
   scanf("%d", & item);
-  temp - > info = item;
-  temp - > next = NULL;
+  temp -> info = item;
+  temp -> next = NULL;
   if (start == NULL)
     start = temp;
   else {
     ptr = start;
-    while (ptr - > next != NULL)
-      ptr = ptr - > next;
-    ptr - > next = temp;
+    while (ptr -> next != NULL)
+      ptr = ptr -> next;
+    ptr -> next = temp;
   }
 }
 void del_beg() {
@@ -139,8 +139,8 @@ void del_beg() {
     printf("List is empty");
   else {
     ptr = start;
-    start = ptr - > next;
-    printf("The deleted item is : %d", ptr - > info);
+    start = ptr -> next;
+    printf("The deleted item is : %d", ptr -> info);
     free(ptr);
   }
 }
@@ -153,10 +153,10 @@ void del_pos(int pos) {
     ptr = start;
     for (i = 1; i < pos; i++) {
       temp = ptr;
-      ptr = ptr - > next;
+      ptr = ptr -> next;
     }
-    temp - > next = ptr - > next;
-    printf("The deleted item : %d", ptr - > info);
+    temp -> next = ptr -> next;
+    printf("The deleted item : %d", ptr -> info);
     free(ptr);
   }
 }
@@ -166,12 +166,12 @@ void del_end() {
     printf("List is empty");
   else {
     ptr = start;
-    while (ptr - > next != NULL) {
+    while (ptr -> next != NULL) {
       temp = ptr;
-      ptr = ptr - > next;
+      ptr = ptr -> next;
     }
-    temp - > next = NULL;
-    printf("The deleted item : %d", ptr - > info);
+    temp -> next = NULL;
+    printf("The deleted item : %d", ptr -> info);
     free(ptr);
   }
 }
