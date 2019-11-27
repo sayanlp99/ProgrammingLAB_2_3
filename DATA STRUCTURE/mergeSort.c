@@ -28,9 +28,8 @@ int main(){
     while(j<=n2-1)
         arr3[k++]=arr2[j++];
     printf("Merged Array:\n");
-    for(i=0;i<n1+n2;i++){
-        printf("[%d]:",i+1);
-        scanf("%d",&arr3[i]);
-    }
+    for(i=0;i<n1+n2;i++)
+        printf("%d  ",arr3[i]);
+    printf("\n");
     return 0;
 }
