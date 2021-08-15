@@ -9,6 +9,6 @@ int main(){
 		s=s+c;
 		n=n/10;
 	}
-	cout<<s<<endl;
+	cout<<s;
 	return 0;
 }
